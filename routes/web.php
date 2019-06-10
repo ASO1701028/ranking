@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('/home.html');
 });
+
+Route::get('themapost','InstantRankingController@themapost');
+Route::get('themalist','InstantRankingController@themalist');
