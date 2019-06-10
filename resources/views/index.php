@@ -1,4 +1,4 @@
-
+<!-- test帝豪！！！！  -->
 <?php
 if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
     if ($_REQUEST['view'] == 'pc') {
