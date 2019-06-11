@@ -70,10 +70,10 @@
             <footer>
                 <nav>
                     <ul>
-                        <li><a href="./">Home</a></li>
-                        <li><a href="./">Ranking</a></li>
-                        <li><a href="./">Thema</a></li>
-                        <li><a href="./">User</a></li>
+                        <li><a href="..">Home</a></li>
+                        <li><a href="..">Ranking</a></li>
+                        <li><a href="..">Thema</a></li>
+                        <li><a href="..">User</a></li>
                     </ul>
                 </nav>
             </footer>
