@@ -52,7 +52,7 @@
                 width: 100%;
                 height: 100px;
             }
-            .thumbnail img{
+            .icon img{
                 border-radius: 50%;
                 height: 40px;
                 width: 40px;
@@ -67,7 +67,7 @@
         </header>
         @section('content')
             <div align="center">
-                <img src="../hukurou.png">
+                <img id="icon" src="../hukurou.png">
             </div>
             <footer>
                 <nav>
