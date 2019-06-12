@@ -9,7 +9,9 @@
 namespace App\Http\Controllers;
 
 
-//use Illuminate\Http\Request;
+use Illuminate\Http\Request;
+
+//use http\Env\Request;
 
 class instantrankingController extends Controller
 {
@@ -26,5 +28,8 @@ class instantrankingController extends Controller
         return view('instantranking.themapost');
     }
 
+    public function user(Request $request){
+        return view('instantranking.user');
+    }
 
 }

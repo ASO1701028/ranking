@@ -2,8 +2,7 @@
 <head>
     <title>InstantRanking</title>
     <style>
-        #caption{font-size:30pt;color: #fb9209;}
-        /*#error{font-size:10pt;color:red;}*/
+        #caption{color: #fb9209;}
         #button {
             display: inline-block;
             border-radius: 10%; /* 角丸       */
@@ -20,23 +19,11 @@
     </style>
 </head>
 <body>
-@section('content')
-    <div id="caption"align="center">InstantRanking</div>
-    {{--@if(count($errors)>0)--}}
-        {{--<div id="error">--}}
-            {{--<ul>--}}
-                {{--@foreach($errors->all() as $error)--}}
-                    {{--<li>{{$error}}</li>--}}
-                {{--@endforeach--}}
-            {{--</ul>--}}
-        {{--</div>--}}
-    {{--@endif--}}
+    <header id="caption"align="center"><h1>InstantRanking</h1></header>
     <form action="./add" method="post">
         <div align="center">
-            {{csrf_field()}}
             <p>テーマ<br>
                 <textarea name="thema" rows="2" cols="30" wrap="soft"></textarea>
-                {{--<input type="text" name="name" value="{{old('thema')}}" id="themaform">--}}
             </p>
             <p>ジャンル
                 <select name="genre">
@@ -46,6 +33,6 @@
             <input type="submit" value="投稿" id="button">
         </div>
     </form>
-@show
+
 </body>
 </html>

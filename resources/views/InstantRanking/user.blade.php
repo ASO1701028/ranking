@@ -1,8 +1,16 @@
-<html>
+<?php
+/**
+ * Created by PhpStorm.
+ * User: kakeru
+ * Date: 2019/06/11
+ * Time: 11:55
+ */ ?>
+
+<http>
     <head>
         <title>InstantRanking</title>
         <style>
-            #caption{color: #fb9209;}
+            #caption{font-size:30pt;color: #fb9209;}
             nav{
                 width: 100%;    /*横幅の指定*/
                 border-top: 1px solid orange;   /*上部の線の色を指定*/
@@ -44,36 +52,32 @@
                 width: 100%;
                 height: 100px;
             }
+            .thumbnail img{
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+            }
 
         </style>
     </head>
+
     <body>
-    <header id="caption" align="center">
-        <h1>InstantRanking</h1>
-    </header>
-    <div align="center">
-        <p>テーマ一覧</p>
-        <p>
-            <a href="themapost" style="color: #fb9209;text-decoration: none">+</a>
-            <select name="genre">
-                <option value="食べ物">食べ物</option>
-                <option value="レジャー">レジャー</option>
-            </select>
-        </p>
-    </div>
-    <div>
-    </div>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="..">Home</a></li>
-                <li><a href="..">Ranking</a></li>
-                <li><a href="..">Thema</a></li>
-                <li><a href="..">User</a></li>
-            </ul>
-        </nav>
-    </footer>
+        <header id="caption" align="center">
+            InstantRanking
+        </header>
+        @section('content')
+            <div align="center">
+                <img src="../hukurou.png">
+            </div>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./">Ranking</a></li>
+                        <li><a href="./">Thema</a></li>
+                        <li><a href="./">User</a></li>
+                    </ul>
+                </nav>
+            </footer>
     </body>
-
-
-</html>
+</http>
