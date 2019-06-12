@@ -52,7 +52,7 @@
                 width: 100%;
                 height: 100px;
             }
-            .icon img{
+            img{
                 border-radius: 50%;
                 height: 40px;
                 width: 40px;
@@ -62,12 +62,17 @@
     </head>
 
     <body>
+    @section('content')
         <header id="caption" align="center">
             InstantRanking
         </header>
-        @section('content')
-            <div align="center">
-                <img id="icon" src="../hukurou.png">
+            <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;" align="center">
+                <img src="../hukurou.png">
+                {{$name}}
+                <br>
+                <p>
+                mail  {{$mail}}
+                </p>
             </div>
             <footer>
                 <nav>
@@ -79,5 +84,6 @@
                     </ul>
                 </nav>
             </footer>
+        @show
     </body>
 </http>

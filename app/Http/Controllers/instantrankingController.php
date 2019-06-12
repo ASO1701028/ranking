@@ -29,6 +29,7 @@ class instantrankingController extends Controller
     }
 
     public function user(Request $request){
+
         return view('instantranking.user');
     }
 
